@@ -1,0 +1,119 @@
+.footer {
+	font-weight: 400;
+	position: relative;
+	color: $color-3;
+	overflow: hidden;
+
+	&__contact-data {
+		address {
+			font-size: 3.2rem;
+			font-style: normal;
+		}
+
+		ul {
+			display: flex;
+			flex-direction: column;
+			gap: 3.4rem 2.4rem;
+			margin-block-start: 3.5rem;
+
+			li {
+				display: flex;
+				flex-direction: column;
+				gap: 1.8rem;
+
+				& > div {
+					&:first-child {
+						font-size: 1.8rem;
+					}
+				}
+			}
+		}
+	}
+
+	&-inner {
+		display: flex;
+		flex-direction: column;
+		gap: 5rem;
+		padding-block: 6rem 7rem;
+	}
+
+	&-top {
+		.container {
+			display: flex;
+			justify-content: space-between;
+			gap: 6.5rem;
+		}
+	}
+
+	&-bottom {
+		.container {
+			display: flex;
+			align-items: flex-end;
+			justify-content: space-between;
+			gap: 2rem;
+		}
+	}
+
+	&-logo {
+		font-size: 3rem;
+		letter-spacing: 0.345rem;
+		margin-block-end: 1.8rem;
+	}
+
+	&__social-networks {
+		ul {
+			display: flex;
+			gap: 3.2rem;
+		}
+	}
+
+	.creator {
+		color: $base-color;
+	}
+
+	&-menu {
+		display: grid;
+		grid-template-columns: repeat(2, auto);
+		justify-content: space-between;
+		gap: 4rem 6.5rem;
+
+		ul {
+			max-width: 35rem;
+
+			li {
+				margin-block-end: 3.4rem;
+				text-wrap: balance;
+			}
+		}
+	}
+
+	&-block {
+		flex: 0 1 auto;
+
+		&--nav-menu {
+			margin-inline: auto;
+		}
+
+		&--form {
+			max-width: 31.6rem;
+		}
+
+		&__text {
+			font-size: 1.8rem;
+			font-weight: 400;
+		}
+	}
+
+	.form {
+		&-mailing {
+			margin-block-start: 3.6rem;
+
+			.btn {
+				&-submit {
+					width: 100%;
+					margin-block-start: 3rem;
+				}
+			}
+		}
+	}
+}

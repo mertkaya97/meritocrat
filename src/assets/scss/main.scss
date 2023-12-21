@@ -1,0 +1,84 @@
+// Utilities
+@import "utils/_vars";
+
+// Basics
+@import "base/_reset";
+
+// Components
+@import "components/_buttons";
+@import "components/_typography";
+@import "components/_fields";
+@import "components/_icons";
+
+@import "layout/_header";
+
+.logo {
+	display: inline-block;
+	font-family: $ff-legder;
+	font-size: 2.4rem;
+	font-weight: 400;
+	line-height: 1;
+	background: $l-gradient-1;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.creator {
+	font-size: 1.8rem;
+	font-family: $ff-cairo;
+	font-weight: 500;
+}
+
+.copyright {
+	font-size: 1.8rem;
+	font-weight: 400;
+
+	span {
+		font-family: $ff-legder;
+	}
+}
+
+.main {
+	flex-grow: 1;
+}
+
+.social-icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	inline-size: 4.2rem;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	border: 1px solid $base-color;
+	flex-shrink: 0;
+
+	img {
+		width: 52.5%;
+		aspect-ratio: 1;
+		object-fit: contain;
+	}
+}
+
+.sh-elem {
+	display: block;
+	pointer-events: none;
+	user-select: none;
+	position: absolute;
+	z-index: -1;
+
+	&-1 {
+		inset-inline-end: 10%;
+		inset-block-start: -100%;
+	}
+
+	&-2 {
+		inset-inline-end: -35%;
+		inset-block-end: -70%;
+	}
+}
+
+@import "layout/_footer";
+
+// Media queries
+@import "_media";

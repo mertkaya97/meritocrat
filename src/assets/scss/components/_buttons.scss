@@ -1,0 +1,21 @@
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	gap: 0.5rem 1rem;
+	min-height: 5.2rem;
+	font-size: 1.6rem;
+	font-weight: 500;
+	padding-inline: 9.3rem;
+	padding-block: 1.2rem;
+	letter-spacing: 0.08rem;
+	color: $color-2;
+	background: $l-gradient-2;
+	border-radius: 2.5rem;
+	transition: $trn-1;
+
+	&:hover {
+		filter: brightness(80%);
+	}
+}

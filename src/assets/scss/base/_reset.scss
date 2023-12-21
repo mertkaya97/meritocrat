@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	-webkit-tap-highlight-color: transparent;
+
+	&::selection {
+		color: $text-selection-color;
+		background-color: $bg-selection-color;
+	}
+}
+
+:root {
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: $root-fs;
+	accent-color: $accent-color;
+}
+
+input,
+textarea,
+button,
+select {
+	background: none;
+	border: none;
+	outline: none;
+	font: inherit;
+	color: inherit;
+	-webkit-tap-highlight-color: transparent;
+}
+
+input,
+textarea {
+	&::placeholder {
+		font: inherit;
+		color: inherit;
+	}
+}
+
+button {
+	cursor: pointer;
+}
+
+body,
+html {
+	height: 100%;
+	overflow-x: hidden;
+}
+
+body {
+	color: $base-color;
+	background-color: $color-2;
+	position: relative;
+
+	font: {
+		style: normal;
+		weight: $base-fw;
+		size: $base-fs;
+		family: $base-ff;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font: inherit;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+	text-decoration-skip-ink: none;
+	color: $link;
+	transition: $trn-1;
+
+	&:hover {
+		color: $main-color;
+	}
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+img {
+	object-fit: cover;
+	object-position: center;
+	height: auto;
+}
+
+#root {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}

@@ -1,0 +1,25 @@
+.header {
+	font-weight: 400;
+	font-size: 1.8rem;
+	
+	&-inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-block: 1.8rem;
+	}
+
+	&-menu {
+		margin-inline: auto;
+
+		ul {
+			display: flex;
+			align-items: center;
+			gap: 5.175rem;
+		}
+	}
+
+	&-address {
+		font-style: normal;
+	}
+}
