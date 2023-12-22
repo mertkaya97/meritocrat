@@ -14,10 +14,9 @@
 
 .logo {
 	display: inline-block;
-	font-family: $ff-legder;
+	font-family: $ff-ledger;
 	font-size: 2.4rem;
 	font-weight: 400;
-	line-height: 1;
 	background: $l-gradient-1;
 	background-clip: text;
 	-webkit-background-clip: text;
@@ -35,7 +34,7 @@
 	font-weight: 400;
 
 	span {
-		font-family: $ff-legder;
+		font-family: $ff-ledger;
 	}
 }
 
@@ -76,6 +75,98 @@
 		inset-inline-end: -35%;
 		inset-block-end: -70%;
 	}
+}
+
+.block {
+	&-intro {
+		padding: 0;
+
+		&__title {
+			font-size: 8rem;
+			margin-block-end: 2.8rem;
+			line-height: 1.3875;
+		}
+
+		&__subtitle {
+			font-size: 4rem;
+			font-weight: 300;
+			line-height: 1.2;
+		}
+
+		&__btn {
+			padding-inline: 3.55rem;
+		}
+	}
+
+	&-about {
+		&__logo {
+			font-size: 3.2rem;
+		}
+
+		&__btn-default {
+			padding-inline: 3.2rem;
+		}
+	}
+
+	&-scheme-work {
+		&__grid {
+			&-elem {
+				width: 22rem;
+				height: 0.5rem;
+				background: $l-gradient-3;
+				margin: auto;
+				transform: translateY(-2.7rem);
+			}
+
+			&-item {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 2.6rem;
+				font-weight: 600;
+
+				div {
+					display: inline-flex;
+					align-items: center;
+					justify-content: center;
+					font-size: 11rem;
+					font-family: $ff-nunito;
+					background: $l-gradient-1;
+					background-clip: text;
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+					line-height: 1;
+					border-radius: 50%;
+					aspect-ratio: 1;
+					border: 1px solid;
+					width: 19.8rem;
+				}
+
+				p {
+					display: -webkit-box;
+					font-size: 1.8rem;
+					text-align: center;
+					text-wrap: balance;
+					max-width: 27.5rem;
+
+				}
+			}
+		}
+
+		.title {
+			background: $l-gradient-2;
+			background-clip: text;
+		}
+	}
+}
+
+.custom-scrollbar {
+	text-transform: uppercase;
+	font-family: $ff-ledger;
+	font-size: 1.9rem;
+	font-weight: 400;
+	line-height: 1.121;
+	letter-spacing: 1.9px;
 }
 
 @import "layout/_footer";

@@ -1,6 +1,10 @@
 .header {
+	position: absolute;
+	width: 100%;
 	font-weight: 400;
 	font-size: 1.8rem;
+	z-index: 80;
+	background-color: transparent;
 	
 	&-inner {
 		display: flex;

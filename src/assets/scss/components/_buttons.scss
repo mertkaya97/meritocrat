@@ -10,12 +10,28 @@
 	padding-inline: 9.3rem;
 	padding-block: 1.2rem;
 	letter-spacing: 0.08rem;
-	color: $color-2;
-	background: $l-gradient-2;
 	border-radius: 2.5rem;
 	transition: $trn-1;
+	flex: 0 0 auto;
 
 	&:hover {
-		filter: brightness(80%);
+		filter: brightness(70%);
+		color: $base-color;
+	}
+
+	&-default {
+		color: $color-2;
+		background: $l-gradient-2;
+
+		&:hover {
+			color: $color-1;
+		}
+	}
+
+	&-ghost {
+		color: $base-color;
+		background: none;
+		border: 2px solid $base-color;
+		padding-inline: 3.2rem;
 	}
 }

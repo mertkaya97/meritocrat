@@ -3,7 +3,7 @@ export default function Header() {
 		<header className={"header"}>
 			<div className={"container"}>
 				<div className={"header-inner"}>
-					<a href="Header" className={"logo"}>
+					<a href="/" className={"logo"}>
 						MERITOCRAT
 					</a>
 					<nav className={"header-menu"}>
